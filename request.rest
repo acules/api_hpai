@@ -1,0 +1,32 @@
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"samsul042019@gmail.com",
+    "password":"123456"
+}
+
+
+####
+GET http://localhost:5000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYW1zdWwgSGlkYXlhdCIsImVtYWlsIjoic2Ftc3VsMDQyMDE5QGdtYWlsLmNvbSIsImlhdCI6MTY5MDYxMzA1NSwiZXhwIjoxNjkwNjEzMTE1fQ.dMjdY9Umr1HwE5qGuPfPRBwVsXkU-SA-rnbdQlhoTsU
+
+###
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "name":"Samsul Hidayat",
+    "email":"samsul042019@gmail.com",
+    "password":"123456",
+    "confPassword":"123456",
+    "role":"admin"
+}
+
+###
+GET http://localhost:5000/api/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYW1zdWwgSGlkYXlhdCIsImVtYWlsIjoic2Ftc3VsMDQyMDE5QGdtYWlsLmNvbSIsImlhdCI6MTY5MDYxMzEyOSwiZXhwIjoxNjkwNjEzMTg5fQ.sdLPpuqnmUiqKyFlVmHL_Ar_w0sMm5orp9lQjAwJDso
+
+###
+DELETE http://localhost:5000/api/users/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYW1zdWwgSGlkYXlhdCIsImVtYWlsIjoic2Ftc3VsMDQyMDE5QGdtYWlsLmNvbSIsImlhdCI6MTY5MDYxMzEyOSwiZXhwIjoxNjkwNjEzMTg5fQ.sdLPpuqnmUiqKyFlVmHL_Ar_w0sMm5orp9lQjAwJDso
